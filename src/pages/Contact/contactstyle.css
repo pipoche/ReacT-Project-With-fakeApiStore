@@ -1,0 +1,7 @@
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./standard-quality-control-concept-m.jpg);
+    background-size: cover;
+}

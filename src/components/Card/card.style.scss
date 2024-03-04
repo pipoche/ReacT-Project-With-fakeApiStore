@@ -1,0 +1,101 @@
+.card {
+  width: 100%;
+  // height: ;
+  // display: flex;
+  // flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  gap: 12px;
+  padding: 0px 0px 1rem 0px;
+  overflow: hidden;
+    &:hover{
+        outline: 3px solid #1aacac;
+        .overlay{
+            display: block;
+        }
+        .btn{
+            display: block;
+        }
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(31, 31, 31, 0.2);
+        display: none;
+    }
+    .btn{
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: #1aacac;
+        padding: 10px 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+  .card_image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+      max-width: 100%;
+      display: block;
+    }
+  }
+  .card_body {
+    height: 100px;
+
+    .card_title {
+      font-size: 14px !important;
+      font-weight: 500;
+      font-style: italic bold;
+      align-items: center;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      .card_price {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #1aacac;
+        color: #fff;
+        padding: 10px 12px;
+        border-radius: 20px;
+        display: block;
+        font-weight: 400;
+      }
+    }
+    .card_category {
+      display: block;
+      background-color: black;
+      color: #fff;
+      width: max-content;
+      font-size: 14px;
+      padding: 10px 14px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+.App .container {
+  max-width: 1280px;
+  margin: 20px auto;
+}
+
